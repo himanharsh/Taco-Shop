@@ -1,19 +1,209 @@
-html {
-    font-size: 22px;
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&display=swap');
+  
+html{
+    scroll-behavior: smooth;
 }
 
-body {
+/* CSS RESET */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* CSS RESET */
+
+/* CSS COLOR VARIABLES */
+:root{
+    --main-color: #091e5c;
+    --bg-color: orangered;
+    --form-footer-color: #091e5c;
+    /* --main-bg-color: #FEFF86; */
+    --main-bg-color: #F8DE22;
+}
+/* CSS COLOR VARIABLES */
+
+
+/* CSS FONT VARIABLES */
+:root{
+    --main-fs: 2rem;
+    --main-margin: 8%;
+    --p-fs: 1.8rem;
+}
+/* CSS FONT VARIABLES */
+body{
     min-height: 100vh;
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 1rem;
-    border-left: 1px solid #333;
-    border-right: 1px solid #333;
+    font-family: 'Nunito', sans-serif;
+    background-color: var(--bg-color);
 }
 
-th, td, caption {
-    border: 1px solid #333;
-    font-family: 'Courier New', Courier, monospace;
-    border-collapse: separate;
+header{
+    width: 100%;
+    color: white;
+    text-align: center;
+    font-family: 'Agbalumo', sans-serif;
+    font-size: var(--main-fs);
+    letter-spacing: 0.25rem;
+    text-shadow: 2px 2px 8px #1f1f1f;
+}
+
+.hero{
+    width: 100%;
+    height: 90vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("img/taco-unsplash-1000x562.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* flex-direction: column; */
+    flex-flow: column wrap;
+}
+
+#about, #timings, #contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    font-size: var(--main-fs);
+    background-color: var(--main-bg-color);
+    color: var(--main-color);
+    margin-left: var(--main-margin);
+    margin-right: var(--main-margin);
+    margin-top: 5%;
+    margin-bottom: 5%;
+    padding: 5%;
+    border-radius: 10px;
+    border: 3px solid var(--form-footer-color);
+}
+#about h2, #timings h2, #contact h2{
+    letter-spacing: 0.1rem;
+}
+#about p{
+    margin-top: 3%;
+    margin-bottom: 3%;
+    font-size: var(--p-fs);
+}
+
+form{
+    margin-top: 3%;
+    width: 100%;
+    background-color: var(--form-footer-color);
+    border-radius: 15px;
+    padding: 3%;
+}
+
+label{
+    color: white;
+    padding: 2%;
+}
+
+input{
+    font-size: 1.5rem;
+    padding-left: 5px;
+    max-width: 100%;
+}
+
+textarea{
+    width: 100%;
+    font-size: 1.5rem;
     padding: 0.5rem;
+}
+
+button[type=submit]{
+    font-size: 1.5rem;
+    padding: 5px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    background-color: green;
+    color: white;
+    border-radius: 20%;
+}
+
+button[type=submit]:hover{
+    background-color: darkgreen;
+}
+
+button[type=reset]{
+    font-size: 1.5rem;
+    padding: 5px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    background-color: #222;
+    color: white;
+    border-radius: 10%;
+}
+
+button[type=reset]:hover{
+    background-color: black;
+}
+
+footer{
+    width: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    text-align: center;
+    height: 40vh;
+    padding: 1rem;
+    background-color: var(--form-footer-color);
+    color: white;
+    font-size: 1.5rem;
+}
+.locationh2{
+    margin-top: auto;
+}
+.cpright{
+    font-size: 1.1rem;
+    margin-top: auto;
+    font-family: monospace;
+}
+
+a{
+    color: yellow;
+}
+
+a:hover{
+    color: gold;
+}
+
+/* Media queries */
+@media screen and (max-width: 768px){
+    header{
+        font-size: 1.5rem;
+    }
+    #about p, #contact p, #timings dl{
+        font-size: 1.5rem;
+    }
+    #about h2, #contact h2, #timings h2{
+        font-size: 2.5rem;
+    }
+    button[type=submit], button[type=reset]{
+        font-size: 1.2rem;
+    }
+    footer{
+        font-size: 1.3rem;
+    }
+}
+@media screen and (max-width: 481px){
+    header{
+        font-size: 1.2rem;
+    }
+    #about p, #contact p, #timings dl{
+        font-size: 1.2rem;
+    }
+    #about h2, #contact h2, #timings h2{
+        font-size: 2rem;
+    }
+    form{
+        font-size: 1.2rem;
+    }
+    button[type=submit], button[type=reset]{
+        font-size: 1rem;
+    }
+    footer{
+        font-size: 1.1rem;
+    }
 }

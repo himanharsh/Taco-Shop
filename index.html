@@ -1,67 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
       content="This is the offcial website of Taco Fiesta, India's emerging taco food chain. Find out more about us..."
-    >
-    <meta name="keywords" content="Taco,food,Mexican">
-    <meta name="author" content="Himanshu Harsh">
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="tf-favicon.ico" type="image/x-icon">
+    />
+    <meta name="keywords" content="Taco,food,Mexican" />
+    <meta name="author" content="Himanshu Harsh" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="tf-favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Taco Fiesta</title>
   </head>
   <body>
     <header>
-      <h1>Welcome to Taco Fiesta</h1>
+      <div class="hero">
+        <h1>
+          <span style="white-space: no-wrap">Welcome to</span>
+          <span style="white-space: nowrap">Taco Fiesta</span>
+        </h1>
+        <h3>India's best Taco makers</h3>
+      </div>
     </header>
 
-    <nav>
+    <!-- <nav>
       <ul>
         <li><a href="#about">About TF</a></li>
         <li><a href="#menu">Our Menu</a></li>
-        <li><a href="hours.html">Store Hours</a></li>
-        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="#">Store Hours</a></li>
+        <li><a href="#">Contact Us</a></li>
       </ul>
-    </nav>
+    </nav> -->
 
     <main>
-        <figure>
-          <img
-            src="img/tacos_and_drink_400x267.png"
-            alt="Tacos and a Drink"
-            width="400"
-            height="267"
-          >
-          <figcaption>Tacos and a Drink</figcaption>
-        </figure>
-
-      <hr>
-
       <section id="about">
-        <h2>About <abbr title="Taco Fiesta">TF</abbr></h2>
-        <p>
-          <abbr title="Taco Fiesta">TF</abbr> was founded in 2022. Our shop was
-          built from <strong>love of tacos</strong>🌮🌮🌮 with an Indian touch.
-          We hope our shop adds a unique and interesting place to our little
-          town.
+        <h2 data-aos="fade-up" data-aos-duration="1000">
+          <span style="white-space: no-wrap">About</span>
+          <span style="white-space: nowrap">Taco Fiesta</span>
+        </h2>
+        <p data-aos="fade-up" data-aos-duration="1000">
+          Taco Fiesta was founded in 2022. Our shop was built from
+          <strong>love of tacos</strong>🌮🌮🌮 with an Indian touch. At Taco
+          Fiesta, we're passionate about creating delicious and authentic
+          Mexican flavors that will tantalize your taste buds. Our mission is
+          simple: to serve you the most mouthwatering tacos and Mexican dishes
+          that will transport you straight to the streets of Mexico.
         </p>
-        <h3>Taco Trivia</h3>
-        <details>
-          <summary>When did Tacos first appear in India?</summary>
-          <p>
-            Taco Bell - a taco chain restaurant started it's first shop in India
-            in 2010. This was the first time taco appeared in India. Now there
-            are many other taco shops. One of them is ours😊.
-          </p>
-        </details>
+
+        <h2 data-aos="fade-up" data-aos-duration="1000">Our Tacos</h2>
+        <p data-aos="fade-up" data-aos-duration="1000">
+          We take pride in our tacos, made with only the freshest and finest
+          ingredients. Whether you're a fan of traditional carne asada,
+          succulent al pastor, or a vegetarian delight, our extensive taco menu
+          has something for everyone. You can also choose your preferred
+          tortilla, from classic soft corn tortillas to gluten-free options.
+        </p>
+
+        <h2 data-aos="fade-up" data-aos-duration="1000">Fresh Ingredients</h2>
+        <p data-aos="fade-up" data-aos-duration="1000">
+          Quality is our top priority. We source our ingredients locally and
+          make sure they're fresh, organic, and bursting with flavor. From our
+          savory meats and fresh vegetables to our homemade salsas, every bite
+          is a celebration of Mexican cuisine.
+        </p>
+
+        <h2 data-aos="fade-up" data-aos-duration="1000">Salsas and Sauses</h2>
+        <p data-aos="fade-up" data-aos-duration="1000">
+          Our salsas and sauces are the secret to our delicious tacos. From mild
+          to fiery hot, we offer a range of salsas to satisfy all taste
+          preferences. Be sure to try our house-made guacamole and creamy crema
+          to complement your meal.
+        </p>
+
+        <h2 data-aos="fade-up" data-aos-duration="1000">Menu Variety</h2>
+        <p data-aos="fade-up" data-aos-duration="1000">
+          While we're known for our tacos, our menu doesn't stop there. We also
+          offer a variety of Mexican specialties like burritos, quesadillas, and
+          nachos. And don't forget to save room for our delectable desserts!
+        </p>
       </section>
 
-      <hr>
-
-      <section id="menu">
+      <!-- <section id="menu">
         <h2>Our Menu</h2>
         <table>
           <caption>
@@ -112,11 +133,79 @@
         <p>
           <a href="#">Back to Top</a>
         </p>
+      </section> -->
+
+      <section id="timings">
+        <h2
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          style="margin-bottom: 2%"
+        >
+          We are open 7 days a week!
+        </h2>
+        <dl data-aos="fade-up" data-aos-duration="1000">
+          <dt>Sunday-Thursday</dt>
+          <dd>11am-9pm</dd>
+          <dt>Friday-Saturday</dt>
+          <dd>11am-11pm</dd>
+        </dl>
       </section>
 
-      <hr>
+      <section id="contact">
+        <h2 data-aos="fade-up" data-aos-duration="1000">Our Contact Form</h2>
+        <form
+          action="https://httpbin.org/post"
+          method="post"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+        >
+          <p>
+            <label for="name">Name:</label>
+            <input
+              type="text"
+              id="name"
+              name="Name"
+              placeholder="your name"
+              required
+            />
+          </p>
+          <p>
+            <label for="email">Email:</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="your email"
+              required
+            />
+          </p>
+          <p style="margin-top: 3%">
+            <label for="message">Your Message:</label><br />
+            <textarea
+              name="message"
+              id="message"
+              cols="30"
+              rows="10"
+            ></textarea>
+          </p>
+          <button type="submit">Send</button>
+          <button type="reset">Reset</button>
+        </form>
+      </section>
     </main>
 
-    <footer>Copyright &#169; Taco Fiesta</footer>
+    <footer>
+      <h2 class="locationh2">Our Location</h2>
+      <address>
+        Shop No - 23, M.M. Market, BIT More,<br />
+        Ranchi, Pin Code: 835215
+      </address>
+      <p>Phone: <a href="tel:+919523318299">+919523318299</a></p>
+      <p class="cpright">Copyright &#169; Taco Fiesta</p>
+    </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
