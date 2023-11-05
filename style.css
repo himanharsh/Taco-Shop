@@ -117,13 +117,12 @@ button[type=submit]{
     padding: 5px;
     transition-duration: 0.4s;
     cursor: pointer;
-    background-color: green;
+    background-color: darkgreen;
     color: white;
-    border-radius: 20%;
 }
 
 button[type=submit]:hover{
-    background-color: darkgreen;
+    background-color: green;
 }
 
 button[type=reset]{
@@ -131,14 +130,31 @@ button[type=reset]{
     padding: 5px;
     transition-duration: 0.4s;
     cursor: pointer;
-    background-color: #222;
+    background-color: #111;
     color: white;
-    border-radius: 10%;
 }
 
 button[type=reset]:hover{
-    background-color: black;
+    background-color: #333;
 }
+
+.top{
+    font-size: 1.5rem;
+    padding: 5px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    background-color: darkmagenta;
+    color: white;
+}
+
+.top a{
+    text-decoration: none;
+}
+
+.top:hover{
+    background-color: magenta;
+}
+
 
 footer{
     width: 100%;
@@ -180,7 +196,7 @@ a:hover{
     #about h2, #contact h2, #timings h2{
         font-size: 2.5rem;
     }
-    button[type=submit], button[type=reset]{
+    button[type=submit], button[type=reset], .top{
         font-size: 1.2rem;
     }
     footer{
@@ -200,7 +216,7 @@ a:hover{
     form{
         font-size: 1.2rem;
     }
-    button[type=submit], button[type=reset]{
+    button[type=submit], button[type=reset], .top{
         font-size: 1rem;
     }
     footer{
