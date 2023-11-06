@@ -15,11 +15,8 @@ html{
 
 /* CSS COLOR VARIABLES */
 :root{
-    --main-color: #091e5c;
     --bg-color: lightblue;
-    --form-footer-color: #091e5c;
-    /* --main-bg-color: #FEFF86; */
-    --main-bg-color: #F8DE22;
+    --section-color: #091e5c;
 }
 /* CSS COLOR VARIABLES */
 
@@ -81,7 +78,7 @@ header{
     flex-direction: column;
     text-align: center;
     font-size: var(--main-fs);
-    background-color: var(--form-footer-color);
+    background-color: var(--section-color);
     color: white;
     margin-left: var(--main-margin);
     margin-right: var(--main-margin);
@@ -89,7 +86,7 @@ header{
     margin-bottom: 5%;
     padding: 5%;
     border-radius: 10px;
-    border: 3px solid var(--form-footer-color);
+    border: 3px solid var(--section-color);
 }
 #about h2, #timings h2, #contact h2{
     letter-spacing: 0.1rem;
@@ -106,7 +103,7 @@ header{
 form{
     margin-top: 3%;
     width: 100%;
-    background-color: var(--form-footer-color);
+    background-color: var(--section-color);
     border-radius: 15px;
     padding: 3%;
 }
@@ -180,7 +177,7 @@ footer{
     text-align: center;
     height: 40vh;
     padding: 1rem;
-    background-color: var(--form-footer-color);
+    background-color: var(--section-color);
     color: white;
     font-size: 1.5rem;
 }
