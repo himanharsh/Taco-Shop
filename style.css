@@ -16,7 +16,7 @@ html{
 /* CSS COLOR VARIABLES */
 :root{
     --main-color: #091e5c;
-    --bg-color: orangered;
+    --bg-color: lightblue;
     --form-footer-color: #091e5c;
     /* --main-bg-color: #FEFF86; */
     --main-bg-color: #F8DE22;
@@ -81,8 +81,8 @@ header{
     flex-direction: column;
     text-align: center;
     font-size: var(--main-fs);
-    background-color: var(--main-bg-color);
-    color: var(--main-color);
+    background-color: var(--form-footer-color);
+    color: white;
     margin-left: var(--main-margin);
     margin-right: var(--main-margin);
     margin-top: 5%;
