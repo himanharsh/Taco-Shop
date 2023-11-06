@@ -33,6 +33,11 @@ body{
     font-family: 'Nunito', sans-serif;
     background-color: var(--bg-color);
 }
+hr{
+    width: 100%;
+    border: 2px solid whitesmoke;
+    margin-bottom: 5rem;
+}
 
 header{
     width: 100%;
@@ -79,7 +84,7 @@ header{
     text-align: center;
     font-size: var(--main-fs);
     background-color: var(--section-color);
-    color: white;
+    color: whitesmoke;
     margin-left: var(--main-margin);
     margin-right: var(--main-margin);
     margin-top: 5%;
@@ -222,6 +227,9 @@ a:hover{
     .topnav a{
         font-size: 1.2rem;
         margin-right: 0;
+    }
+    hr{
+        margin-bottom: 2rem;
     }
 }
 @media screen and (max-width: 481px){
