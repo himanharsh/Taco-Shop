@@ -47,9 +47,23 @@ header{
     text-shadow: 2px 2px 8px #1f1f1f;
 }
 
+.topnav{
+    align-self: flex-end;
+    margin-bottom: auto;
+}
+
+.topnav a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    padding: 0 1rem;
+    margin-right: 1rem;
+    font-family: 'Nunito', sans-serif;
+}
+
 .hero{
     width: 100%;
-    height: 90vh;
+    height: 100vh;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("img/taco-unsplash-1000x562.jpg");
     background-position: center;
     background-repeat: no-repeat;
@@ -57,7 +71,6 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
-    /* flex-direction: column; */
     flex-flow: column wrap;
 }
 
@@ -80,6 +93,9 @@ header{
 }
 #about h2, #timings h2, #contact h2{
     letter-spacing: 0.1rem;
+}
+#contact h2{
+    margin-top: -5%;
 }
 #about p{
     margin-top: 3%;
@@ -202,6 +218,14 @@ a:hover{
     footer{
         font-size: 1.3rem;
     }
+    .topnav{
+        align-self: center;
+        text-align: center;
+    }
+    .topnav a{
+        font-size: 1.2rem;
+        margin-right: 0;
+    }
 }
 @media screen and (max-width: 481px){
     header{
@@ -221,5 +245,8 @@ a:hover{
     }
     footer{
         font-size: 1.1rem;
+    }
+    .topnav a{
+        font-size: 0.85rem;
     }
 }
